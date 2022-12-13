@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <title>Cripto</title>
+      
+      <link rel="stylesheet" href="estilos.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body onload="opcionesCriptomoneda()">
+      <div class="contenedor">
+        <div class="row">
+          <div class="one-half column">
+           
+          </div>
+          <div class="one-half column">
+            <h1 class="head">Cotiza Criptomonedas al instante</h1>
+            <form>
+              <div id="msj-error"></div>
+              <label>Elige tu moneda</label>
+              <select 
+              onchange="cotizarMoneda()"
+              id="moneda">
+                <option value="">- Seleccione - </option>
+                <option value="USD">DOLAR DE ESTADOS UNIDOS</option>
+                <option value="MXN">PESOS MEXICANOS</option>
+                   <option value="EUR">EURO</option>
+                   <option value="GBP">Libra Esterlina</option>
+              </select>
+              <label>Elige tu Criptomoneda</label>
+              <select
+              onchange="cotizarMoneda()"
+              id="criptomoneda">
+                
+              </select>
+              <button type="button" class="boton" onclick="cotizarMoneda()">Calcular</button>
+            </form>
+            <div class="resultado" id="divResultado"></div>
+          </div>
+        </div>
+        
+      </div>
+    
+      <script src="app.js"></script>
+    </body>
+    </html>
+</body>
+</html>

@@ -1,0 +1,17 @@
+#yo {
+  width:  1000px;
+  height: 800px;
+  background-color: #5d3a3a;
+  border: solid black 15px;
+  display: block;
+  padding: auto;
+ 
+}
+#tu{
+    margin-top: 10px;
+    width:  700px;
+    height: 600px;
+    background-color: #B5E0BA;
+     display: block;
+    padding: auto;
+}
